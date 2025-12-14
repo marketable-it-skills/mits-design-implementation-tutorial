@@ -126,25 +126,32 @@ Transform your unstyled HTML into a professionally styled dark-themed website wi
 
 ---
 
-### 🚧 Module 3: Page-Specific CSS
+### ✅ Module 3: Home Page Styling (index.css)
 
-⏱️ **Time:** TBD  
-**Status:** 🚧 Planning in progress
+⏱️ **Time:** 75-90 minutes
 
-Implement unique styling for each page including hero sections, cards, buttons, and page-specific components.
+Transform your professional website structure into a visually stunning home page with complete styling. Add reusable button components and page-specific styles.
 
-**Planned topics:**
+**What you'll learn:**
 
-- Hero section styling with gradients
-- Button components and CTA styling
-- Project card components
-- Page-specific layouts
-- Component composition
+- CSS component design patterns (button base + variants)
+- Background images with CSS (size, position, cover)
+- Gradient overlays for text readability
+- Interactive card components with hover effects
+- Visual hierarchy (size, color, spacing)
+- CSS transforms and transitions
+- Page-specific CSS organization
+- Git feature branch workflow (continued)
+
+**Deliverable:** Stunning home page with hero section, styled buttons, project cards with hover effects, and complete visual hierarchy
+
+[📖 Overview](module-3/overview.md) | [🔨 Workshop](module-3/workshop.md) | [✅ Solution](module-3/solution/)
 
 ---
 
-### Future Modules (7-8)
+### Future Modules (4-8)
 
+**Module 4-6:** TBD (styling remaining pages, advanced patterns)  
 **Module 7:** Responsive Design with media queries  
 **Module 8:** Accessibility & SEO optimization
 
@@ -152,14 +159,14 @@ Full module details coming soon!
 
 ## 📚 Modules at a Glance
 
-| Module         | Title                            | Status      | Time      | Topics                                          |
-| -------------- | -------------------------------- | ----------- | --------- | ----------------------------------------------- |
-| [1](module-1/) | HTML Structure Only              | ✅ Complete | 40-55 min | Semantic HTML, validation, Git basics           |
-| [2](module-2/) | CSS Fundamentals - Base & Layout | ✅ Complete | 60-75 min | CSS reset, variables, typography, flexbox, grid |
-| 3              | Page-Specific CSS                | 🚧 Planning | TBD       | Hero sections, buttons, cards                   |
-| 4-6            | TBD                              | 📝 Planning | TBD       | To be determined                                |
-| 7              | Responsive Design                | 📝 Planned  | TBD       | Media queries, mobile-first                     |
-| 8              | Accessibility & SEO              | 📝 Planned  | TBD       | WCAG AA, meta tags, optimization                |
+| Module         | Title                            | Status      | Time      | Topics                                             |
+| -------------- | -------------------------------- | ----------- | --------- | -------------------------------------------------- |
+| [1](module-1/) | HTML Structure Only              | ✅ Complete | 40-55 min | Semantic HTML, validation, Git basics              |
+| [2](module-2/) | CSS Fundamentals - Base & Layout | ✅ Complete | 60-75 min | CSS reset, variables, typography, flexbox, grid    |
+| [3](module-3/) | Home Page Styling (index.css)    | ✅ Complete | 75-90 min | Components, hero, cards, buttons, visual hierarchy |
+| 4-6            | TBD                              | 📝 Planning | TBD       | To be determined                                   |
+| 7              | Responsive Design                | 📝 Planned  | TBD       | Media queries, mobile-first                        |
+| 8              | Accessibility & SEO              | 📝 Planned  | TBD       | WCAG AA, meta tags, optimization                   |
 
 ## 🚀 Getting Started
 
@@ -206,16 +213,20 @@ Each module includes a complete `solution/` folder with working code. Use these 
 
 ### Key Concepts
 
-**Module 1-2 (Available Now):**
+**Modules 1-3 (Available Now):**
 
 - Semantic HTML5 structure
 - CSS reset and box model
 - CSS custom properties (variables)
 - Typography hierarchy
 - Flexbox for 1D layouts (header, navigation)
-- CSS Grid for 2D layouts (footer)
+- CSS Grid for 2D layouts (footer, project cards)
 - Sticky positioning
 - Container pattern
+- Component-based CSS (button patterns)
+- Background images and gradients
+- CSS transforms and transitions
+- Visual hierarchy principles
 
 **Coming Soon:**
 
@@ -259,9 +270,21 @@ mits-design-implementation-tutorial/
 │       ├── *.html               # HTML files (from Module 1)
 │       ├── assets/images/       # MITS logo
 │       └── css/
-│           ├── base.css         # Reset, variables, typography
+│           ├── base.css         # Reset, variables, typography, footer improvements
 │           ├── layout.css       # Header, footer, layout
 │           └── *.css            # Page-specific (empty)
+│
+├── module-3/                    # ✅ Home Page Styling
+│   ├── overview.md              # Module concepts & learning objectives
+│   ├── workshop.md              # Step-by-step styling tasks
+│   └── solution/                # Complete working code
+│       ├── *.html               # HTML files (updated button classes)
+│       ├── assets/images/       # Hero image added
+│       └── css/
+│           ├── base.css         # With button components
+│           ├── layout.css       # Unchanged from Module 2
+│           ├── index.css        # Home page styling ✨ NEW
+│           └── *.css            # Other pages (empty)
 │
 └── README.md                    # ← You are here!
 ```
@@ -274,6 +297,7 @@ mits-design-implementation-tutorial/
 
 - Module 1: 40-55 minutes (HTML structure + Git setup)
 - Module 2: 60-75 minutes (CSS fundamentals)
+- Module 3: 75-90 minutes (Home page styling)
 
 **Each module is designed to:**
 
@@ -337,17 +361,19 @@ Learn CSS Grid, Flexbox, and custom properties - the tools professionals use tod
 
 ## 🌟 Course Highlights
 
-### Completed Modules (1-2)
+### Completed Modules (1-3)
 
 ✅ **Semantic HTML mastery** - Build accessible, standards-compliant markup  
 ✅ **CSS custom properties** - Modern theming and design systems  
 ✅ **Dark theme implementation** - Professional color schemes  
 ✅ **Flexbox & Grid** - Modern layout techniques  
+✅ **Component-based CSS** - Reusable button patterns, card components  
+✅ **Visual effects** - Background images, gradients, transforms, transitions  
 ✅ **Git & GitHub workflow** - Professional version control
 
-### Coming Soon (Modules 3-8)
+### Coming Soon (Modules 4-8)
 
-🚧 **Component styling** - Buttons, cards, hero sections  
+🚧 **Additional page styling** - About, Guide, Contribute pages  
 🚧 **Responsive design** - Mobile-first with media queries  
 🚧 **Accessibility** - WCAG AA compliance  
 🚧 **SEO optimization** - Meta tags, sitemaps, structured data
@@ -400,8 +426,8 @@ This course is part of the **[MITS Initiative](https://github.com/marketable-it-
 **Current Progress:**
 
 - ✅ Module 1: Complete (HTML Structure)
-- ✅ Module 2: Complete (CSS Fundamentals)
-- 🚧 Module 3: Planning in progress
+- ✅ Module 2: Complete (CSS Fundamentals - Base & Layout)
+- ✅ Module 3: Complete (Home Page Styling)
 - 📝 Modules 4-8: Planned
 
 **Ready to start?** Head to [Module 1](module-1/overview.md) and begin your journey to HTML/CSS mastery! 🚀
