@@ -1,0 +1,140 @@
+/* ==========================================
+   LAYOUT - STRUCTURAL STYLES
+   ========================================== */
+
+/* Container */
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+/* Header */
+header {
+  background-color: var(--color-bg-secondary);
+  padding: var(--spacing-md) 0;
+  border-bottom: 1px solid var(--color-bg-tertiary);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.logo-icon {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  gap: var(--spacing-md);
+  list-style: none;
+  margin: 0;
+}
+
+nav a {
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  transition: all 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-tertiary);
+}
+
+nav a.active {
+  color: var(--color-accent);
+  background-color: rgba(6, 182, 212, 0.1);
+}
+
+/* Footer */
+footer {
+  background-color: var(--color-bg-secondary);
+  padding: var(--spacing-xl) 0 var(--spacing-md);
+  margin-top: var(--spacing-2xl);
+  border-top: 1px solid var(--color-bg-tertiary);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.footer-section h4 {
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-sm);
+  font-size: 1.125rem;
+}
+
+.footer-section p {
+  color: var(--color-text-tertiary);
+  font-size: 0.875rem;
+  margin-bottom: var(--spacing-xs);
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: var(--spacing-xs);
+}
+
+.footer-section a {
+  color: var(--color-text-tertiary);
+  font-size: 0.875rem;
+  transition: color 0.2s ease;
+}
+
+.footer-section a:hover {
+  color: var(--color-accent);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--color-bg-tertiary);
+}
+
+.footer-bottom p {
+  color: var(--color-text-tertiary);
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+/* Main Content */
+main {
+  min-height: 50vh;
+}
+
+/* Sections */
+section {
+  padding: var(--spacing-2xl) 0;
+}
+
+/* Remove excessive padding from first section */
+section:first-child {
+  padding-top: var(--spacing-xl);
+}
