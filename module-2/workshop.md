@@ -54,6 +54,7 @@ Below the reset, add your design system variables:
   /* Colors - Dark Theme */
   --color-bg-primary: #0f172a; /* slate-900 - main background */
   --color-bg-secondary: #1e293b; /* slate-800 - card background */
+  --color-bg-secondary-dark: #0f172a; /* slate-900 - darker secondary background */
   --color-bg-tertiary: #334155; /* slate-700 - subtle borders */
 
   --color-text-primary: #ffffff; /* white - headings */
@@ -540,9 +541,8 @@ In `layout.css`, add footer styles:
 ```css
 /* Footer */
 footer {
-  background-color: var(--color-bg-secondary);
+  background-color: var(--color-bg-secondary-dark);
   padding: var(--spacing-xl) 0 var(--spacing-md);
-  margin-top: var(--spacing-2xl);
   border-top: 1px solid var(--color-bg-tertiary);
 }
 
@@ -598,8 +598,9 @@ footer {
 
 **What this does:**
 
-- Dark footer background (matches header)
-- Top border separates from content
+- **Darker footer background** - Uses `--color-bg-secondary-dark` for better visual separation from page content
+- **Top border** separates footer from content
+- **No extra margin-top** - Section padding handles spacing naturally
 - **CSS Grid** - Creates flexible column layout
 - `auto-fit` - Columns adjust based on screen width
 - `minmax(250px, 1fr)` - Min 250px, max equal width
