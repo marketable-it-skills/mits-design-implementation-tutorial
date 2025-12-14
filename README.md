@@ -4,7 +4,7 @@
 
 Master HTML5 and CSS3 by building a professional 4-page website for the MITS platform - **no JavaScript, no frameworks, just pure web fundamentals**.
 
-![MITS Design & Implementation Tutorial](../../.claude/course-resources/mits-design-implementation-tutorial/assets/course-cover-image.webp)
+![MITS Design & Implementation Tutorial](assets/images/course-cover-image.webp)
 
 ## 🎯 What You'll Build
 
