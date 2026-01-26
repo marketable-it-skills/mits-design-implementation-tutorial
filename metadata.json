@@ -6,7 +6,10 @@
   "skillDomainIds": [
     1
   ],
-  "languages": ["EN", "HU"],
+  "languages": [
+    "EN",
+    "HU"
+  ],
   "authors": [
     {
       "name": "Zoltán Sisák",
@@ -23,7 +26,7 @@
     "Accessibility",
     "Flexbox"
   ],
-  "status": "draft",
+  "status": "published",
   "moduleNames": {
     "1": "HTML Structure Only",
     "2": "CSS Fundamentals - Base & Layout",
