@@ -1,0 +1,43 @@
+{
+  "name": "Design Implementation Tutorial",
+  "displayName": "MITS Design & Implementation Tutorial",
+  "description": "Master HTML5 and CSS3 by building a professional 4-page website for the MITS platform - no JavaScript, no frameworks, just pure web fundamentals.",
+  "url": "https://github.com/marketable-it-skills/mits-design-implementation-tutorial",
+  "skillDomainIds": [
+    1
+  ],
+  "languages": [
+    "EN",
+    "HU"
+  ],
+  "authors": [
+    {
+      "name": "Zoltán Sisák",
+      "url": "https://hu.linkedin.com/in/zoltan-sisak"
+    }
+  ],
+  "technologies": [
+    "HTML",
+    "CSS"
+  ],
+  "tags": [
+    "Design implementation",
+    "SEO",
+    "Accessibility",
+    "Flexbox",
+    "CSS Grid",
+    "Responsive Design",
+    "GitHub Pages"
+  ],
+  "status": "complete",
+  "moduleNames": {
+    "1": "HTML Structure Only",
+    "2": "CSS Fundamentals - Base & Layout",
+    "3": "Home Page Styling",
+    "4": "About Page Styling",
+    "5": "Guide & Contribute Pages Styling",
+    "6": "Polish & Advanced CSS Techniques",
+    "7": "Responsive Design - Mobile First",
+    "8": "Accessibility, SEO & Production Deployment"
+  }
+}
