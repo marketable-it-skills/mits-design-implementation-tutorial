@@ -22,12 +22,12 @@ No shortcuts. No frameworks. You'll understand every line you write.
 
 A complete **MITS Platform promotional website** with 4 fully-styled, accessible, responsive pages:
 
-| Page | Content |
-|---|---|
-| **Home** | Hero section, project card grid, call-to-action sections |
-| **About** | Mission statement, feature grid, project goals |
-| **Guide** | Step-by-step registration walkthrough, prerequisites |
-| **Collaborate** | Contribution opportunities, contact information |
+| Page            | Content                                                  |
+| --------------- | -------------------------------------------------------- |
+| **Home**        | Hero section, project card grid, call-to-action sections |
+| **About**       | Mission statement, feature grid, project goals           |
+| **Guide**       | Step-by-step registration walkthrough, prerequisites     |
+| **Collaborate** | Contribution opportunities, contact information          |
 
 The final result is a **live, GitHub Pages-hosted portfolio project** with Lighthouse scores of 90+ across all categories.
 
@@ -94,6 +94,7 @@ By completing all 8 modules, you'll be able to:
 Create all 4 pages with complete semantic HTML5 structure. CSS files are linked but left empty — this teaches separation of concerns and prevents cognitive overload before you're ready to style.
 
 **What you'll learn:**
+
 - HTML5 semantic elements (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`)
 - Proper heading hierarchy (one H1 per page, then H2–H6 in order)
 - Multi-page website structure and internal linking
@@ -113,6 +114,7 @@ Create all 4 pages with complete semantic HTML5 structure. CSS files are linked 
 Transform your unstyled HTML into a professionally styled dark-themed website. This module builds the design system foundation that all other modules rely on.
 
 **What you'll learn:**
+
 - CSS reset and the box model (`box-sizing: border-box`)
 - CSS custom properties (variables) for colors, spacing, and typography
 - Dark theme color palette (`#0f172a` background, `#06b6d4` accent)
@@ -134,6 +136,7 @@ Transform your unstyled HTML into a professionally styled dark-themed website. T
 Build the most complex page first. The home page introduces the key component patterns — buttons, hero with background image, project cards — that cascade through the rest of the course.
 
 **What you'll learn:**
+
 - CSS component design patterns (`.btn`, `.btn-primary`, `.btn-secondary`)
 - Background images with `background-size: cover` and `background-position`
 - Linear gradient overlays for text readability over images
@@ -154,6 +157,7 @@ Build the most complex page first. The home page introduces the key component pa
 Apply the design system to the About page with more advanced CSS techniques — introducing `auto-fit` grids that respond to content without media queries, and pseudo-element custom bullets.
 
 **What you'll learn:**
+
 - Page-specific CSS architecture (one CSS file per page)
 - Section background alternation for visual rhythm
 - CSS pseudo-elements (`::before`) for custom arrow list bullets
@@ -174,6 +178,7 @@ Apply the design system to the About page with more advanced CSS techniques — 
 Style the final two pages of the site. The Guide page introduces CSS counters for automatic step numbering; the Contribute page teaches opportunity card grids and flex alignment for contact information.
 
 **What you'll learn:**
+
 - CSS counters (`counter-reset`, `counter-increment`, `counter()`) for auto-numbered steps
 - `::before` pseudo-element as a styled numbered circle
 - Flexbox for step layout (number circle + content side by side)
@@ -194,6 +199,7 @@ Style the final two pages of the site. The Guide page introduces CSS counters fo
 Add professional polish across the entire site via a single `enhancements.css` file. No new pages — just one new file that elevates the whole experience.
 
 **What you'll learn:**
+
 - `scroll-behavior: smooth` for native smooth scrolling
 - Skip-to-content link (visually hidden until keyboard-focused)
 - `:focus` vs `:focus-visible` — keyboard ring without mouse outline
@@ -214,6 +220,7 @@ Add professional polish across the entire site via a single `enhancements.css` f
 Make the desktop-first website work beautifully at every screen size — 320 px phones to wide monitors — using a single `responsive.css` file and a CSS-only hamburger menu.
 
 **What you'll learn:**
+
 - `clamp(min, preferred, max)` for fluid typography without media queries
 - CSS-only hamburger navigation: hidden `<input type="checkbox">` + `:checked` + `~` sibling selector
 - Hamburger → ✕ animation with `transform: translateY() rotate()`
@@ -236,6 +243,7 @@ Make the desktop-first website work beautifully at every screen size — 320 px 
 The final module makes the site production-ready: WCAG AA compliant, discoverable by search engines, and live on GitHub Pages with Lighthouse scores of 90+.
 
 **What you'll learn:**
+
 - `aria-label="Main navigation"` on `<nav>` for screen reader landmarks
 - `aria-current="page"` on active nav links
 - Logo as a navigation link with correct accessible name (no redundant announcements)
@@ -257,16 +265,16 @@ The final module makes the site production-ready: WCAG AA compliant, discoverabl
 
 ## 📚 Modules at a Glance
 
-| Module | Title | Status | Time | Key Concept |
-|--------|-------|--------|------|-------------|
-| [1](module-1/) | HTML Structure Only | ✅ Complete | 40–55 min | Semantic HTML5, W3C validation |
-| [2](module-2/) | CSS Fundamentals — Base & Layout | ✅ Complete | 60–75 min | CSS variables, Flexbox, Grid |
-| [3](module-3/) | Home Page Styling | ✅ Complete | 75–90 min | Components, hero image, cards |
-| [4](module-4/) | About Page Styling | ✅ Complete | 60–75 min | `::before`, `auto-fit`, grayscale filter |
-| [5](module-5/) | Guide & Contribute Styling | ✅ Complete | 75–90 min | CSS counters, flex alignment |
-| [6](module-6/) | Polish & Advanced CSS | ✅ Complete | 60–75 min | Animations, focus rings, print styles |
-| [7](module-7/) | Responsive Design | ✅ Complete | 90–120 min | `clamp()`, hamburger menu, breakpoints |
-| [8](module-8/) | Accessibility, SEO & Deployment | ✅ Complete | 90–120 min | ARIA, Open Graph, JSON-LD, GitHub Pages |
+| Module         | Title                            | Status      | Time       | Key Concept                              |
+| -------------- | -------------------------------- | ----------- | ---------- | ---------------------------------------- |
+| [1](module-1/) | HTML Structure Only              | ✅ Complete | 40–55 min  | Semantic HTML5, W3C validation           |
+| [2](module-2/) | CSS Fundamentals — Base & Layout | ✅ Complete | 60–75 min  | CSS variables, Flexbox, Grid             |
+| [3](module-3/) | Home Page Styling                | ✅ Complete | 75–90 min  | Components, hero image, cards            |
+| [4](module-4/) | About Page Styling               | ✅ Complete | 60–75 min  | `::before`, `auto-fit`, grayscale filter |
+| [5](module-5/) | Guide & Contribute Styling       | ✅ Complete | 75–90 min  | CSS counters, flex alignment             |
+| [6](module-6/) | Polish & Advanced CSS            | ✅ Complete | 60–75 min  | Animations, focus rings, print styles    |
+| [7](module-7/) | Responsive Design                | ✅ Complete | 90–120 min | `clamp()`, hamburger menu, breakpoints   |
+| [8](module-8/) | Accessibility, SEO & Deployment  | ✅ Complete | 90–120 min | ARIA, Open Graph, JSON-LD, GitHub Pages  |
 
 **Total estimated time:** 8–12 hours
 
@@ -301,6 +309,7 @@ code module-1/overview.md
 ### Option 3: Use Solutions as Reference
 
 Each module includes a complete `solution/` folder. Use them to:
+
 - Verify your implementation is on the right track
 - Debug issues by comparing your code with the working version
 - See the expected visual result at each stage
@@ -311,14 +320,14 @@ Each module includes a complete `solution/` folder. Use them to:
 
 If you already know basic HTML/CSS, focus on the modern techniques:
 
-| Module | Why It's Worth Your Time |
-|---|---|
-| [Module 2](module-2/) | CSS custom properties — the modern way to theme |
-| [Module 4](module-4/) | `auto-fit` grids + pseudo-element bullets |
-| [Module 5](module-5/) | CSS counters — powerful and underused |
+| Module                | Why It's Worth Your Time                             |
+| --------------------- | ---------------------------------------------------- |
+| [Module 2](module-2/) | CSS custom properties — the modern way to theme      |
+| [Module 4](module-4/) | `auto-fit` grids + pseudo-element bullets            |
+| [Module 5](module-5/) | CSS counters — powerful and underused                |
 | [Module 6](module-6/) | `@keyframes`, `prefers-reduced-motion`, print styles |
-| [Module 7](module-7/) | `clamp()` + CSS-only hamburger menu |
-| [Module 8](module-8/) | ARIA, Open Graph, JSON-LD, deployment |
+| [Module 7](module-7/) | `clamp()` + CSS-only hamburger menu                  |
+| [Module 8](module-8/) | ARIA, Open Graph, JSON-LD, deployment                |
 
 ---
 
@@ -333,6 +342,7 @@ If you already know basic HTML/CSS, focus on the modern techniques:
 ### CSS Concepts by Module
 
 **Foundation (Modules 1–3)**
+
 - Semantic HTML5 structure (`header`, `nav`, `main`, `section`, `article`, `footer`)
 - CSS reset and box model (`box-sizing: border-box`)
 - CSS custom properties (design tokens for colors, spacing, typography)
@@ -345,6 +355,7 @@ If you already know basic HTML/CSS, focus on the modern techniques:
 - Card components — hover effects with `transform` and `box-shadow`
 
 **Intermediate (Modules 4–5)**
+
 - CSS pseudo-elements `::before` for custom list bullets
 - CSS Grid `auto-fit` + `minmax()` — responsive without media queries
 - CSS counters — automatic sequential numbering
@@ -354,6 +365,7 @@ If you already know basic HTML/CSS, focus on the modern techniques:
 - `margin-top: auto` for bottom-aligned flex children
 
 **Advanced (Modules 6–8)**
+
 - `@keyframes` and the `animation` shorthand
 - `scroll-behavior: smooth` — native smooth scrolling
 - `:focus-visible` — keyboard ring without mouse outline
@@ -442,11 +454,11 @@ mits-design-implementation-tutorial/
 
 **Total course:** ~8–12 hours across all 8 modules
 
-| Phase | Modules | Time | Focus |
-|---|---|---|---|
-| Foundation | 1–3 | ~3–4 hours | HTML structure, CSS system, home page |
-| Content pages | 4–6 | ~3–4 hours | About, Guide, Contribute, polish |
-| Production-ready | 7–8 | ~3–4 hours | Responsive design, accessibility, deployment |
+| Phase            | Modules | Time       | Focus                                        |
+| ---------------- | ------- | ---------- | -------------------------------------------- |
+| Foundation       | 1–3     | ~3–4 hours | HTML structure, CSS system, home page        |
+| Content pages    | 4–6     | ~3–4 hours | About, Guide, Contribute, polish             |
+| Production-ready | 7–8     | ~3–4 hours | Responsive design, accessibility, deployment |
 
 Each module is designed to be completed in **one focused session** with immediate visual results after every step — no session ends without something new to see in the browser.
 
