@@ -1,0 +1,161 @@
+/* ==========================================
+   ABOUT PAGE SPECIFIC STYLES (about.css)
+   Module 4: About Page Styling
+   ========================================== */
+
+/* ==========================================
+   PAGE TITLE SECTION
+   ========================================== */
+
+.page-title {
+  background-color: var(--color-bg-secondary);
+  padding: var(--spacing-xl) 0;
+  text-align: center;
+  border-bottom: 1px solid var(--color-bg-tertiary);
+}
+
+.page-title h1 {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.page-title .subtitle {
+  color: var(--color-accent);
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+/* ==========================================
+   MISSION SECTION
+   ========================================== */
+
+.mission {
+  background-color: var(--color-bg-primary);
+  padding: var(--spacing-2xl) 0;
+}
+
+.mission h2 {
+  margin-bottom: var(--spacing-lg);
+}
+
+.mission p {
+  font-size: 1.0625rem; /* 17px */
+  line-height: 1.8;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: var(--spacing-md);
+}
+
+.mission p:first-of-type {
+  border-left: 3px solid var(--color-accent);
+  padding-left: var(--spacing-md);
+  color: var(--color-text-primary);
+}
+
+/* ==========================================
+   GOALS SECTION
+   ========================================== */
+
+.goals {
+  background-color: var(--color-bg-secondary);
+  padding: var(--spacing-2xl) 0;
+}
+
+.goals h2 {
+  margin-bottom: var(--spacing-xl);
+}
+
+.goals-list {
+  list-style: none;
+  margin: 0 auto var(--spacing-xl) auto;
+  padding: 0;
+  max-width: 760px;
+}
+
+.goals-list li {
+  position: relative;
+  padding: var(--spacing-md) 0 var(--spacing-md) 2.5rem;
+  border-bottom: 1px solid var(--color-bg-tertiary);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.goals-list li:last-child {
+  border-bottom: none;
+}
+
+.goals-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  top: var(--spacing-md);
+  color: var(--color-accent);
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.goals .btn {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+/* ==========================================
+   FEATURES SECTION
+   ========================================== */
+
+.features {
+  background-color: var(--color-bg-primary);
+  padding: var(--spacing-2xl) 0;
+}
+
+.features h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+/* ==========================================
+   FEATURE CARDS
+   ========================================== */
+
+.feature {
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-bg-tertiary);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature:hover {
+  background-color: var(--color-bg-tertiary);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  border-color: var(--color-accent);
+}
+
+.feature h3 {
+  font-size: 1.125rem;
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.4;
+}
+
+.feature-icon {
+  filter: grayscale(1);
+}
+
+.feature p {
+  font-size: 0.9375rem; /* 15px */
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin: 0;
+  flex-grow: 1;
+}

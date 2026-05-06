@@ -1,0 +1,176 @@
+/* ==========================================
+   CONTRIBUTE PAGE SPECIFIC STYLES (contribute.css)
+   Module 5: Guide & Contribute Pages Styling
+   ========================================== */
+
+/* ==========================================
+   PAGE TITLE SECTION
+   ========================================== */
+
+.page-title {
+  background-color: var(--color-bg-secondary);
+  padding: var(--spacing-xl) 0;
+  text-align: center;
+  border-bottom: 1px solid var(--color-bg-tertiary);
+}
+
+.page-title h1 {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.page-title .subtitle {
+  color: var(--color-accent);
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+/* ==========================================
+   INTRO SECTION
+   ========================================== */
+
+.intro {
+  background-color: var(--color-bg-primary);
+  padding: var(--spacing-2xl) 0;
+  text-align: center;
+}
+
+.intro p {
+  font-size: 1.0625rem; /* 17px */
+  line-height: 1.8;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* ==========================================
+   OPPORTUNITIES SECTION
+   ========================================== */
+
+.opportunities {
+  background-color: var(--color-bg-secondary);
+  padding: var(--spacing-2xl) 0;
+}
+
+.opportunities h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.opportunities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+/* ==========================================
+   OPPORTUNITY CARDS
+   ========================================== */
+
+.opportunity {
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-bg-tertiary);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.opportunity:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.opportunity-icon {
+  filter: grayscale(1);
+}
+
+.opportunity h3 {
+  font-size: 1.125rem;
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.4;
+}
+
+.opportunity > p {
+  font-size: 0.9375rem; /* 15px */
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-md);
+}
+
+.opportunity ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: auto; /* push list to bottom of card if cards vary in height */
+}
+
+.opportunity ul li {
+  position: relative;
+  padding: var(--spacing-xs) 0 var(--spacing-xs) 1.25rem;
+  border-bottom: 1px solid var(--color-bg-tertiary);
+  font-size: 0.875rem;
+  color: var(--color-text-tertiary);
+  line-height: 1.5;
+}
+
+.opportunity ul li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.opportunity ul li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: var(--color-text-tertiary);
+}
+
+/* ==========================================
+   GET INVOLVED SECTION
+   ========================================== */
+
+.get-involved {
+  background-color: var(--color-bg-primary);
+  padding: var(--spacing-2xl) 0;
+  text-align: center;
+}
+
+.get-involved h2 {
+  margin-bottom: var(--spacing-md);
+}
+
+.get-involved > .container > p {
+  max-width: 600px;
+  margin: 0 auto var(--spacing-xl);
+  line-height: 1.7;
+}
+
+.contact-info {
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-bg-tertiary);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  max-width: 480px;
+  margin: 0 auto var(--spacing-xl);
+  text-align: left;
+}
+
+.contact-info p {
+  display: flex;
+  align-items: baseline;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+  font-size: 0.9375rem;
+}
+
+.contact-info p:last-child {
+  margin-bottom: 0;
+}
+
+.contact-info strong {
+  color: var(--color-text-primary);
+  min-width: 90px;
+  flex-shrink: 0;
+}

@@ -1,0 +1,165 @@
+/* ==========================================
+   GUIDE PAGE SPECIFIC STYLES (guide.css)
+   Module 5: Guide & Contribute Pages Styling
+   ========================================== */
+
+/* ==========================================
+   PAGE TITLE SECTION
+   ========================================== */
+
+.page-title {
+  background-color: var(--color-bg-secondary);
+  padding: var(--spacing-xl) 0;
+  text-align: center;
+  border-bottom: 1px solid var(--color-bg-tertiary);
+}
+
+.page-title h1 {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.page-title .subtitle {
+  color: var(--color-accent);
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+/* ==========================================
+   HOW TO USE SECTION (CSS COUNTER STEPS)
+   ========================================== */
+
+.how-to-use {
+  background-color: var(--color-bg-primary);
+  padding: var(--spacing-2xl) 0;
+  counter-reset: step-counter; /* initialise the counter at 0 */
+}
+
+.how-to-use h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.step {
+  display: flex;
+  gap: var(--spacing-lg);
+  align-items: flex-start;
+  padding-bottom: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+  border-bottom: 1px solid var(--color-bg-tertiary);
+  counter-increment: step-counter; /* increment by 1 for every .step */
+}
+
+.step:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* The numbered circle - generated purely with CSS */
+.step::before {
+  content: counter(step-counter);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  color: var(--color-bg-primary);
+  font-weight: 700;
+  font-size: 1.125rem;
+  flex-shrink: 0;
+  margin-top: 0.125rem; /* optical vertical alignment with h3 */
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-content h3 {
+  font-size: 1.125rem;
+  margin-bottom: var(--spacing-xs);
+}
+
+.step-content p {
+  margin: 0;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+}
+
+/* ==========================================
+   PREREQUISITES SECTION
+   ========================================== */
+
+.prerequisites {
+  background-color: var(--color-bg-secondary);
+  padding: var(--spacing-2xl) 0;
+}
+
+.prerequisites h2 {
+  margin-bottom: var(--spacing-xl);
+}
+
+.prerequisites h3 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-accent);
+  margin-bottom: var(--spacing-sm);
+}
+
+.prerequisites ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: var(--spacing-xl);
+}
+
+.prerequisites ul li {
+  position: relative;
+  padding: var(--spacing-sm) 0 var(--spacing-sm) 1.75rem;
+  border-bottom: 1px solid var(--color-bg-tertiary);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.prerequisites ul li:last-child {
+  border-bottom: none;
+}
+
+.prerequisites ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+/* ==========================================
+   CTA SECTION
+   ========================================== */
+
+.cta {
+  background-color: var(--color-bg-primary);
+  padding: var(--spacing-2xl) 0;
+  text-align: center;
+}
+
+.cta h2 {
+  margin-bottom: var(--spacing-md);
+}
+
+.cta p {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-lg); /* 32px - spacious gap between buttons */
+  flex-wrap: wrap;
+  margin-top: var(--spacing-xl);
+}

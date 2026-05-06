@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  sitemap.xml — tells search engines which pages exist on your site.
+  Replace YOUR-USERNAME and REPO-NAME with your actual GitHub username
+  and repository name before deploying.
+  Submit this URL to Google Search Console after deployment:
+  https://YOUR-USERNAME.github.io/REPO-NAME/sitemap.xml
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://YOUR-USERNAME.github.io/REPO-NAME/index.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://YOUR-USERNAME.github.io/REPO-NAME/about.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://YOUR-USERNAME.github.io/REPO-NAME/guide.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://YOUR-USERNAME.github.io/REPO-NAME/contribute.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

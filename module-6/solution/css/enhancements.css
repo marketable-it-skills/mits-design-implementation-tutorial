@@ -1,0 +1,179 @@
+/* ==========================================
+   ENHANCEMENTS (enhancements.css)
+   Module 6: Polish & Advanced CSS Techniques
+   Site-wide progressive enhancements - linked by all pages
+   ========================================== */
+
+/* ==========================================
+   SMOOTH SCROLLING
+   ========================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ==========================================
+   SKIP TO CONTENT LINK (ACCESSIBILITY)
+   ========================================== */
+
+/* Visually hidden until keyboard-focused */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: var(--spacing-sm);
+  background-color: var(--color-accent);
+  color: var(--color-bg-primary);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  z-index: 999;
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+
+/* Slides into view when focused via keyboard (Tab) */
+.skip-link:focus {
+  top: 0;
+}
+
+/* ==========================================
+   FOCUS VISIBLE (KEYBOARD NAVIGATION)
+   ========================================== */
+
+/* Remove browser default outline - we replace it with a branded one */
+:focus {
+  outline: none;
+}
+
+/* Show clear focus ring ONLY for keyboard users (not mouse clicks) */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+/* ==========================================
+   BUTTON ACTIVE STATE
+   ========================================== */
+
+/* Subtle "press" feedback when a button is clicked */
+.btn:active {
+  transform: translateY(0) scale(0.97);
+  box-shadow: none;
+  transition-duration: 0.1s;
+}
+
+/* ==========================================
+   PAGE FADE-IN ANIMATION
+   ========================================== */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+main {
+  animation: fadeInUp 0.5s ease both;
+}
+
+/* ==========================================
+   RESPECT USER'S MOTION PREFERENCES
+   ========================================== */
+
+/*
+  Some users experience discomfort or nausea from animations.
+  The prefers-reduced-motion media query detects this OS-level setting
+  and disables all motion - a WCAG 2.1 AA requirement.
+*/
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ==========================================
+   PRINT STYLES
+   ========================================== */
+
+@media print {
+  /* Hide non-content elements */
+  header,
+  footer,
+  nav,
+  .btn,
+  .skip-link {
+    display: none !important;
+  }
+
+  /* Reset dark theme colours to print-friendly black on white */
+  body {
+    background: white;
+    color: black;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: black;
+  }
+
+  /* Make links visible in print */
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+
+  /* Remove section background colours and images */
+  .hero,
+  .page-title,
+  .intro,
+  .mission,
+  .goals,
+  .how-to-use,
+  .prerequisites,
+  .cta,
+  .features,
+  .featured-projects,
+  .opportunities,
+  .get-involved,
+  .collaboration {
+    background: white !important;
+    padding: 0.75rem 0;
+  }
+
+  /* Remove hero background image */
+  .hero {
+    background-image: none !important;
+  }
+
+  /* Simple borders on cards instead of dark backgrounds */
+  .project-card,
+  .feature,
+  .opportunity,
+  .contact-info {
+    background: white !important;
+    border: 1px solid #ccc !important;
+    box-shadow: none !important;
+  }
+
+  /* Prevent awkward page breaks inside cards and steps */
+  .project-card,
+  .feature,
+  .opportunity,
+  .step {
+    break-inside: avoid;
+  }
+}

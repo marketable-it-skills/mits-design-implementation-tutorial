@@ -1,405 +1,476 @@
-# MITS Design & Implementation Tutorial
+﻿# MITS Design & Implementation Tutorial
 
-**Powered by [Marketable IT Skills (MITS)](https://github.com/marketable-it-skills) initiative**
+![MITS Design & Implementation Tutorial](./assets/images/course-cover-image.webp)
 
-Master HTML5 and CSS3 by building a professional 4-page website for the MITS platform - **no JavaScript, no frameworks, just pure web fundamentals**.
+> Build a **production-ready, 4-page professional website** using only HTML5 and CSS3 — no JavaScript, no frameworks, just pure web fundamentals done right.
 
-![MITS Design & Implementation Tutorial](assets/images/course-cover-image.webp)
+[![Course Status](https://img.shields.io/badge/Status-Complete-brightgreen)](.)
+[![Modules](https://img.shields.io/badge/Modules-8-blue)](.)
+[![Difficulty](https://img.shields.io/badge/Difficulty-Beginner%20to%20Intermediate-orange)](.)
+[![Time](https://img.shields.io/badge/Total%20Time-8--12%20hours-lightgrey)](.)
+[![Tech](https://img.shields.io/badge/Tech-HTML5%20%2B%20CSS3-cyan)](.)
 
-## 🎯 What You'll Build
-
-A complete, production-ready **MITS Platform promotional website** featuring:
-
-- 4 fully functional pages (Home, About, Guide, Contribute)
-- Professional dark theme with modern design
-- Semantic HTML5 structure for accessibility
-- Modern CSS layouts (Flexbox, Grid)
-- Responsive design for all devices
-- WCAG AA accessibility compliance
-- SEO-optimized with proper meta tags
-- GitHub-hosted portfolio project
-
-**Final Project**: A professional static website built entirely with HTML and CSS that you can showcase in your portfolio.
+---
 
 ## 📚 Overview
 
-This hands-on tutorial teaches you to build professional websites using **pure HTML5 and CSS3** - no JavaScript, no frameworks, just web fundamentals done right. You'll learn modern CSS techniques (Grid, Flexbox, custom properties) while building a real promotional website for the MITS platform.
+The **MITS Design & Implementation Tutorial** teaches you to build professional websites using pure HTML5 and CSS3. You'll build a complete promotional website for the MITS (Marketable IT Skills) platform — a dark-themed, 4-page site featuring a hero section with background image, responsive project cards, accessible navigation, and full mobile support.
 
-### What Makes This Course Different
+No shortcuts. No frameworks. You'll understand every line you write.
 
-- ✅ **Pure HTML/CSS** - Master web fundamentals without framework dependencies
-- ✅ **Foundation-first approach** - Learn semantic HTML before styling
-- ✅ **Modern CSS techniques** - Grid, Flexbox, custom properties (not floats or tables!)
-- ✅ **Incremental learning** - Small steps with immediate visual feedback
-- ✅ **Professional practices** - Git workflow, accessibility, validation from day one
-- ✅ **Real project** - Build an actual promotional website, not toy examples
-- ✅ **Dark theme design** - Modern, professional aesthetic
+### What You'll Build
+
+A complete **MITS Platform promotional website** with 4 fully-styled, accessible, responsive pages:
+
+| Page | Content |
+|---|---|
+| **Home** | Hero section, project card grid, call-to-action sections |
+| **About** | Mission statement, feature grid, project goals |
+| **Guide** | Step-by-step registration walkthrough, prerequisites |
+| **Collaborate** | Contribution opportunities, contact information |
+
+The final result is a **live, GitHub Pages-hosted portfolio project** with Lighthouse scores of 90+ across all categories.
 
 ### Who This Course Is For
 
-- **Beginner web developers** learning HTML/CSS fundamentals
-- **Bootcamp students** building strong foundation skills
-- **Self-taught developers** wanting to master web standards properly
-- **Anyone** who wants to build websites without relying on frameworks
-- **Vocational students** preparing for web design competitions
+- **Beginner web developers** learning HTML/CSS fundamentals from scratch
+- **Bootcamp students** who want to master web standards deeply before frameworks
+- **Self-taught developers** building strong foundational skills
+- **Vocational IT students** preparing for web design competitions (EuroSkills, WorldSkills)
+- **Anyone** who wants to build websites without relying on pre-built component libraries
 
-## 🚀 What You'll Learn
+---
 
-By completing this course, you'll be able to:
+## 🎯 What You'll Learn
 
-- ✅ **Write semantic HTML5** - Proper document structure with accessibility built-in
-- ✅ **Build modern CSS layouts** - Master Flexbox and Grid for professional designs
-- ✅ **Use CSS custom properties** - Create maintainable design systems
-- ✅ **Implement dark themes** - Professional color schemes and theming
-- ✅ **Create responsive designs** - Mobile-first approach with media queries
-- ✅ **Ensure accessibility** - WCAG AA compliance and semantic markup
-- ✅ **Optimize for SEO** - Proper meta tags, sitemaps, structured data
-- ✅ **Follow professional workflows** - Git version control, feature branches
-- ✅ **Validate code** - W3C HTML/CSS validation, Lighthouse audits
-- ✅ **Build without frameworks** - Deep understanding of web platform
+By completing all 8 modules, you'll be able to:
+
+- ✅ **Write semantic HTML5** — proper document structure with accessibility built in from the start
+- ✅ **Create a CSS design system** — CSS custom properties (variables) for colors, spacing, and typography
+- ✅ **Build modern layouts** — CSS Grid for 2D layouts, Flexbox for 1D layouts (never floats)
+- ✅ **Design a dark theme** — professional color palette matching the MITS platform aesthetic
+- ✅ **Style reusable components** — buttons, cards, badges, tags — the building blocks of any UI
+- ✅ **Use CSS pseudo-elements** — `::before` for custom bullets, CSS counters for auto-numbering
+- ✅ **Add professional polish** — `@keyframes` animations, `scroll-behavior: smooth`, focus rings
+- ✅ **Build responsive layouts** — `clamp()` typography, `auto-fit` grids, CSS-only hamburger menu
+- ✅ **Ensure accessibility** — WCAG AA compliance, ARIA labels, skip links, keyboard navigation
+- ✅ **Optimise for SEO** — Open Graph tags, JSON-LD structured data, `sitemap.xml`, `robots.txt`
+- ✅ **Deploy to production** — GitHub Pages deployment, Lighthouse auditing
+- ✅ **Follow professional Git practices** — feature branches, meaningful commits, GitHub push
+
+---
 
 ## 📋 Prerequisites
 
 **Required:**
 
-- Basic computer literacy (file management, text editing)
-- Modern web browser (Chrome, Firefox, Edge, or Safari)
-- Code editor (VS Code recommended - [download here](https://code.visualstudio.com/))
-- Git installed ([download here](https://git-scm.com/))
-- GitHub account (free - [sign up here](https://github.com/))
+- Basic computer literacy (creating folders, opening files)
+- A modern web browser — Chrome, Firefox, Edge, or Safari
+- [VS Code](https://code.visualstudio.com/) (free code editor)
+- [Git](https://git-scm.com/) installed
+- A free [GitHub](https://github.com/) account
 
 **Recommended:**
 
-- Basic understanding of HTML tags (helpful but not required)
-- VS Code Live Server extension (for easy testing)
-- Browser DevTools familiarity (we'll teach you more!)
+- VS Code [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) for instant browser refresh
+- Basic familiarity with HTML tags (helpful, not required — we teach from scratch)
+- Browser DevTools open on the side (we use it constantly)
 
-**No Prior Experience Needed:**
+**No experience needed with:**
 
-- No CSS knowledge required (we start from scratch)
-- No Git experience needed (we teach step-by-step)
-- No command line experience needed (we explain every command)
+- CSS (we start from zero)
+- JavaScript (none used in this course)
+- Command line (every command is explained step by step)
+- Frameworks (we deliberately avoid them)
+
+---
 
 ## 📖 Course Structure
 
 ### ✅ Module 1: HTML Structure Only
 
-⏱️ **Time:** 40-55 minutes
+⏱️ **Time:** 40–55 minutes
 
-Create all 4 pages with complete semantic HTML5 structure. Learn proper markup without the distraction of styling.
+Create all 4 pages with complete semantic HTML5 structure. CSS files are linked but left empty — this teaches separation of concerns and prevents cognitive overload before you're ready to style.
 
 **What you'll learn:**
+- HTML5 semantic elements (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`)
+- Proper heading hierarchy (one H1 per page, then H2–H6 in order)
+- Multi-page website structure and internal linking
+- CSS file organisation strategy (6 CSS files with clear responsibilities)
+- HTML validation with the W3C validator
 
-- Semantic HTML5 elements (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`)
-- Proper heading hierarchy (H1-H6)
-- Multi-page website structure
-- File organization
-- HTML validation with W3C
-- Git workflow fundamentals (init, branch, commit, GitHub push)
-
-**Deliverable:** 4-page unstyled website with perfect HTML structure
+**Deliverable:** 4-page unstyled website with perfect semantic HTML — readable even without CSS
 
 [📖 Overview](module-1/overview.md) | [🔨 Workshop](module-1/workshop.md) | [✅ Solution](module-1/solution/)
 
 ---
 
-### ✅ Module 2: CSS Fundamentals - Base & Layout
+### ✅ Module 2: CSS Fundamentals — Base & Layout
 
-⏱️ **Time:** 60-75 minutes
+⏱️ **Time:** 60–75 minutes
 
-Transform your unstyled HTML into a professionally styled dark-themed website with incremental CSS implementation.
+Transform your unstyled HTML into a professionally styled dark-themed website. This module builds the design system foundation that all other modules rely on.
 
 **What you'll learn:**
+- CSS reset and the box model (`box-sizing: border-box`)
+- CSS custom properties (variables) for colors, spacing, and typography
+- Dark theme color palette (`#0f172a` background, `#06b6d4` accent)
+- Typography hierarchy — headings, body text, links
+- Flexbox for 1D layouts (sticky header, navigation)
+- CSS Grid for 2D layouts (footer columns)
+- Sticky positioning for the header
 
-- CSS reset and box model
-- CSS custom properties (variables) for design systems
-- Typography hierarchy and font styling
-- Flexbox for header/navigation layout
-- CSS Grid for footer organization
-- Sticky positioning
-- Container pattern
-- Git feature branch workflow (continued)
-
-**Deliverable:** Fully styled website with dark theme, header, footer, and beautiful typography
+**Deliverable:** Dark-themed website with styled header, footer, and consistent typography across all 4 pages
 
 [📖 Overview](module-2/overview.md) | [🔨 Workshop](module-2/workshop.md) | [✅ Solution](module-2/solution/)
 
 ---
 
-### ✅ Module 3: Home Page Styling (index.css)
+### ✅ Module 3: Home Page Styling (`index.css`)
 
-⏱️ **Time:** 75-90 minutes
+⏱️ **Time:** 75–90 minutes
 
-Transform your professional website structure into a visually stunning home page with complete styling. Add reusable button components and page-specific styles.
+Build the most complex page first. The home page introduces the key component patterns — buttons, hero with background image, project cards — that cascade through the rest of the course.
 
 **What you'll learn:**
+- CSS component design patterns (`.btn`, `.btn-primary`, `.btn-secondary`)
+- Background images with `background-size: cover` and `background-position`
+- Linear gradient overlays for text readability over images
+- Interactive card components: `transform: translateY()`, `box-shadow`, hover transitions
+- CSS Grid `repeat(3, 1fr)` for the project card grid
+- Badge and tag styling with semi-transparent backgrounds
 
-- CSS component design patterns (button base + variants)
-- Background images with CSS (size, position, cover)
-- Gradient overlays for text readability
-- Interactive card components with hover effects
-- Visual hierarchy (size, color, spacing)
-- CSS transforms and transitions
-- Page-specific CSS organization
-- Git feature branch workflow (continued)
-
-**Deliverable:** Stunning home page with hero section, styled buttons, project cards with hover effects, and complete visual hierarchy
+**Deliverable:** Stunning home page with hero image, styled buttons, project cards with hover effects, and complete visual hierarchy
 
 [📖 Overview](module-3/overview.md) | [🔨 Workshop](module-3/workshop.md) | [✅ Solution](module-3/solution/)
 
 ---
 
-### Future Modules (4-8)
+### ✅ Module 4: About Page Styling (`about.css`)
 
-**Module 4-6:** TBD (styling remaining pages, advanced patterns)  
-**Module 7:** Responsive Design with media queries  
-**Module 8:** Accessibility & SEO optimization
+⏱️ **Time:** 60–75 minutes
 
-Full module details coming soon!
+Apply the design system to the About page with more advanced CSS techniques — introducing `auto-fit` grids that respond to content without media queries, and pseudo-element custom bullets.
+
+**What you'll learn:**
+- Page-specific CSS architecture (one CSS file per page)
+- Section background alternation for visual rhythm
+- CSS pseudo-elements (`::before`) for custom arrow list bullets
+- CSS Grid `auto-fit` + `minmax(240px, 1fr)` — responsive without media queries
+- `filter: grayscale(1)` for decorative emoji icons
+- `p:first-of-type` selector for typographic callout emphasis
+
+**Deliverable:** Fully styled About page with responsive feature grid and custom visual elements
+
+[📖 Overview](module-4/overview.md) | [🔨 Workshop](module-4/workshop.md) | [✅ Solution](module-4/solution/)
+
+---
+
+### ✅ Module 5: Guide & Contribute Pages Styling
+
+⏱️ **Time:** 75–90 minutes
+
+Style the final two pages of the site. The Guide page introduces CSS counters for automatic step numbering; the Contribute page teaches opportunity card grids and flex alignment for contact information.
+
+**What you'll learn:**
+- CSS counters (`counter-reset`, `counter-increment`, `counter()`) for auto-numbered steps
+- `::before` pseudo-element as a styled numbered circle
+- Flexbox for step layout (number circle + content side by side)
+- `text-transform: uppercase` + `letter-spacing` for label typography
+- `align-items: baseline` + `min-width` for aligned label/value contact rows
+- `margin-top: auto` to push elements to the bottom of flex containers
+
+**Deliverable:** All 4 pages fully styled — a complete, portfolio-ready MITS website
+
+[📖 Overview](module-5/overview.md) | [🔨 Workshop](module-5/workshop.md) | [✅ Solution](module-5/solution/)
+
+---
+
+### ✅ Module 6: Polish & Advanced CSS Techniques
+
+⏱️ **Time:** 60–75 minutes
+
+Add professional polish across the entire site via a single `enhancements.css` file. No new pages — just one new file that elevates the whole experience.
+
+**What you'll learn:**
+- `scroll-behavior: smooth` for native smooth scrolling
+- Skip-to-content link (visually hidden until keyboard-focused)
+- `:focus` vs `:focus-visible` — keyboard ring without mouse outline
+- `@keyframes` `fadeInUp` animation on `<main>` page load
+- `@media (prefers-reduced-motion: reduce)` — accessible animation disabling
+- `@media print` — white background, hidden nav, clean printed output
+
+**Deliverable:** A polished 4-page website with smooth interactions, keyboard accessibility, fade-in animations, and print-friendly output
+
+[📖 Overview](module-6/overview.md) | [🔨 Workshop](module-6/workshop.md) | [✅ Solution](module-6/solution/)
+
+---
+
+### ✅ Module 7: Responsive Design — Mobile First
+
+⏱️ **Time:** 90–120 minutes
+
+Make the desktop-first website work beautifully at every screen size — 320 px phones to wide monitors — using a single `responsive.css` file and a CSS-only hamburger menu.
+
+**What you'll learn:**
+- `clamp(min, preferred, max)` for fluid typography without media queries
+- CSS-only hamburger navigation: hidden `<input type="checkbox">` + `:checked` + `~` sibling selector
+- Hamburger → ✕ animation with `transform: translateY() rotate()`
+- `@media (max-width: 1023px)` tablet breakpoints
+- `@media (max-width: 767px)` mobile breakpoints
+- `position: absolute; top: 100%` for the dropdown nav panel
+- Touch-friendly tap targets (44 × 44 px minimum)
+- Browser DevTools device emulation for responsive testing
+
+**Deliverable:** A fully responsive 4-page website that adapts from 320 px phones to desktops, with a working CSS hamburger menu
+
+[📖 Overview](module-7/overview.md) | [🔨 Workshop](module-7/workshop.md) | [✅ Solution](module-7/solution/)
+
+---
+
+### ✅ Module 8: Accessibility, SEO & Production Deployment
+
+⏱️ **Time:** 90–120 minutes
+
+The final module makes the site production-ready: WCAG AA compliant, discoverable by search engines, and live on GitHub Pages with Lighthouse scores of 90+.
+
+**What you'll learn:**
+- `aria-label="Main navigation"` on `<nav>` for screen reader landmarks
+- `aria-current="page"` on active nav links
+- Logo as a navigation link with correct accessible name (no redundant announcements)
+- `aria-hidden="true"` for decorative emoji icons
+- Page `<title>` best practices (50–60 characters)
+- `<meta name="description">` (120–158 characters)
+- Open Graph tags (`og:title`, `og:description`, `og:image`, `og:type`) for social sharing
+- Twitter Card tags for share previews
+- `<link rel="canonical">` and `<meta name="theme-color">`
+- JSON-LD structured data (`WebSite` + `WebPage` schemas)
+- `sitemap.xml` and `robots.txt`
+- GitHub Pages deployment and Lighthouse auditing
+
+**Deliverable:** A live, publicly accessible website deployed on GitHub Pages with WCAG AA accessibility, full SEO metadata, and Lighthouse 90+ scores
+
+[📖 Overview](module-8/overview.md) | [🔨 Workshop](module-8/workshop.md) | [✅ Solution](module-8/solution/)
+
+---
 
 ## 📚 Modules at a Glance
 
-| Module         | Title                            | Status      | Time      | Topics                                             |
-| -------------- | -------------------------------- | ----------- | --------- | -------------------------------------------------- |
-| [1](module-1/) | HTML Structure Only              | ✅ Complete | 40-55 min | Semantic HTML, validation, Git basics              |
-| [2](module-2/) | CSS Fundamentals - Base & Layout | ✅ Complete | 60-75 min | CSS reset, variables, typography, flexbox, grid    |
-| [3](module-3/) | Home Page Styling (index.css)    | ✅ Complete | 75-90 min | Components, hero, cards, buttons, visual hierarchy |
-| 4-6            | TBD                              | 📝 Planning | TBD       | To be determined                                   |
-| 7              | Responsive Design                | 📝 Planned  | TBD       | Media queries, mobile-first                        |
-| 8              | Accessibility & SEO              | 📝 Planned  | TBD       | WCAG AA, meta tags, optimization                   |
+| Module | Title | Status | Time | Key Concept |
+|--------|-------|--------|------|-------------|
+| [1](module-1/) | HTML Structure Only | ✅ Complete | 40–55 min | Semantic HTML5, W3C validation |
+| [2](module-2/) | CSS Fundamentals — Base & Layout | ✅ Complete | 60–75 min | CSS variables, Flexbox, Grid |
+| [3](module-3/) | Home Page Styling | ✅ Complete | 75–90 min | Components, hero image, cards |
+| [4](module-4/) | About Page Styling | ✅ Complete | 60–75 min | `::before`, `auto-fit`, grayscale filter |
+| [5](module-5/) | Guide & Contribute Styling | ✅ Complete | 75–90 min | CSS counters, flex alignment |
+| [6](module-6/) | Polish & Advanced CSS | ✅ Complete | 60–75 min | Animations, focus rings, print styles |
+| [7](module-7/) | Responsive Design | ✅ Complete | 90–120 min | `clamp()`, hamburger menu, breakpoints |
+| [8](module-8/) | Accessibility, SEO & Deployment | ✅ Complete | 90–120 min | ARIA, Open Graph, JSON-LD, GitHub Pages |
+
+**Total estimated time:** 8–12 hours
+
+---
 
 ## 🚀 Getting Started
 
-### Option 1: Follow Sequential Modules (Recommended)
+### Option 1: Follow Modules Sequentially (Recommended)
 
-1. Start with [Module 1 Overview](module-1/overview.md) to understand the concepts
-2. Work through the [Module 1 Workshop](module-1/workshop.md) step-by-step
-3. Compare your work with the [Module 1 Solution](module-1/solution/)
+Each module builds directly on the previous one. Follow this path for the full learning experience:
+
+1. Read [Module 1 Overview](module-1/overview.md) to understand the concepts
+2. Work through [Module 1 Workshop](module-1/workshop.md) step-by-step
+3. Compare your work with [Module 1 Solution](module-1/solution/) if you get stuck
 4. Move to Module 2 and repeat
 
-**Why this works:** Each module builds on the previous one. You'll see continuous progress and build deep understanding.
+**Why this works:** You see the site transform incrementally — from plain HTML to a dark-themed layout to a polished, responsive, live website. Each step produces an immediate visual result.
 
 ### Option 2: Clone and Explore
 
 ```bash
-# Clone the MITS course creator repository
+# Clone the course creator repository
 git clone https://github.com/marketable-it-skills/mits-course-creator.git
 
 # Navigate to this course
 cd mits-course-creator/courses/mits-design-implementation-tutorial
 
-# Start with Module 1
+# Open Module 1 overview
 code module-1/overview.md
 ```
 
 ### Option 3: Use Solutions as Reference
 
-Each module includes a complete `solution/` folder with working code. Use these to:
+Each module includes a complete `solution/` folder. Use them to:
+- Verify your implementation is on the right track
+- Debug issues by comparing your code with the working version
+- See the expected visual result at each stage
 
-- Check your implementation
-- Debug issues
-- See the expected end result
-- Learn from complete examples
+> **Note:** Try to complete each workshop yourself before checking solutions. You'll learn significantly more from working through the challenge.
 
-**Note:** Try to complete workshops yourself before checking solutions - you'll learn more!
+### Option 4: Fast-Track (For Developers with HTML/CSS Basics)
+
+If you already know basic HTML/CSS, focus on the modern techniques:
+
+| Module | Why It's Worth Your Time |
+|---|---|
+| [Module 2](module-2/) | CSS custom properties — the modern way to theme |
+| [Module 4](module-4/) | `auto-fit` grids + pseudo-element bullets |
+| [Module 5](module-5/) | CSS counters — powerful and underused |
+| [Module 6](module-6/) | `@keyframes`, `prefers-reduced-motion`, print styles |
+| [Module 7](module-7/) | `clamp()` + CSS-only hamburger menu |
+| [Module 8](module-8/) | ARIA, Open Graph, JSON-LD, deployment |
+
+---
 
 ## 🛠️ Technologies & Concepts Covered
 
 ### Core Technologies
 
-- **HTML5** - Semantic markup, accessibility features, meta tags
-- **CSS3** - Modern layouts, animations, custom properties
-- **Git & GitHub** - Version control, feature branches, remote repositories
+- **HTML5** — Semantic elements, accessibility attributes, meta tags
+- **CSS3** — Grid, Flexbox, custom properties, animations, media queries
+- **Git & GitHub** — Version control, feature branches, GitHub Pages deployment
 
-### Key Concepts
+### CSS Concepts by Module
 
-**Modules 1-3 (Available Now):**
+**Foundation (Modules 1–3)**
+- Semantic HTML5 structure (`header`, `nav`, `main`, `section`, `article`, `footer`)
+- CSS reset and box model (`box-sizing: border-box`)
+- CSS custom properties (design tokens for colors, spacing, typography)
+- Typography hierarchy (heading scale, line height, font weights)
+- Flexbox for 1D layouts — header navigation, button groups
+- CSS Grid for 2D layouts — footer columns, project card grid
+- Sticky positioning, container pattern, section spacing
+- Button components (`.btn`, `.btn-primary`, `.btn-secondary`)
+- Background images with gradient overlays (`background-size: cover`)
+- Card components — hover effects with `transform` and `box-shadow`
 
-- Semantic HTML5 structure
-- CSS reset and box model
-- CSS custom properties (variables)
-- Typography hierarchy
-- Flexbox for 1D layouts (header, navigation)
-- CSS Grid for 2D layouts (footer, project cards)
-- Sticky positioning
-- Container pattern
-- Component-based CSS (button patterns)
-- Background images and gradients
-- CSS transforms and transitions
-- Visual hierarchy principles
+**Intermediate (Modules 4–5)**
+- CSS pseudo-elements `::before` for custom list bullets
+- CSS Grid `auto-fit` + `minmax()` — responsive without media queries
+- CSS counters — automatic sequential numbering
+- `filter: grayscale(1)` for decorative images
+- `text-transform`, `letter-spacing` for label typography
+- `align-items: baseline` for aligned label/value rows
+- `margin-top: auto` for bottom-aligned flex children
 
-**Coming Soon:**
-
-- Component-based CSS
-- Responsive design patterns
-- Media queries and breakpoints
-- Mobile-first approach
-- Accessibility (WCAG AA)
-- SEO optimization
-- Performance best practices
+**Advanced (Modules 6–8)**
+- `@keyframes` and the `animation` shorthand
+- `scroll-behavior: smooth` — native smooth scrolling
+- `:focus-visible` — keyboard ring without mouse outline
+- `@media (prefers-reduced-motion)` — accessible animation
+- `@media print` — print-friendly stylesheet
+- `clamp(min, preferred, max)` — fluid responsive typography
+- CSS-only hamburger: `<input type="checkbox">` + `:checked` + `~`
+- `position: absolute; top: 100%` — dropdown panels
+- `aria-label`, `aria-current`, `aria-hidden` — ARIA attributes
+- Open Graph and Twitter Card meta tags
+- JSON-LD structured data (`schema.org`)
+- `sitemap.xml` and `robots.txt`
 
 ### Professional Practices
 
-- ✅ **Git workflow** - Feature branches, meaningful commits, GitHub integration
-- ✅ **Code validation** - W3C HTML validator, CSS validation
-- ✅ **Separation of concerns** - HTML for structure, CSS for presentation
-- ✅ **Accessibility-first** - Semantic HTML, ARIA where needed
-- ✅ **Progressive enhancement** - Build foundation before adding features
-- ✅ **Browser DevTools** - Debugging and testing techniques
+- **Git workflow** — Feature branches (`feat/module-N`), meaningful commit messages, push to remote
+- **Separation of concerns** — HTML for structure, CSS for presentation (no inline styles)
+- **Progressive enhancement** — Each module's solution is the next module's starting point
+- **CSS architecture** — One file per concern (`base.css` → `layout.css` → page-specific → `enhancements.css` → `responsive.css`)
+- **Accessibility-first** — WCAG AA compliance built into every stage, not retrofitted at the end
+- **W3C validation** — Check HTML and CSS for errors throughout
+- **Browser DevTools** — Used for debugging and responsive testing in every module
+
+---
 
 ## 📁 Project Structure
 
 ```
 mits-design-implementation-tutorial/
-├── module-1/                    # ✅ HTML Structure Only
+├── module-1/                    ✅ HTML Structure Only
 │   ├── overview.md              # Module concepts & learning objectives
 │   ├── workshop.md              # Step-by-step exercises
-│   ├── solution/                # Complete working code
-│   │   ├── index.html           # Home page
-│   │   ├── about.html           # About MITS page
-│   │   ├── guide.html           # Getting Started page
-│   │   ├── contribute.html      # Collaboration page
-│   │   └── css/                 # Empty CSS files (Module 2)
-│   ├── vs-code-tutorial.md      # VS Code tips
-│   └── emmet-tutorial.md        # Emmet shortcuts
-│
-├── module-2/                    # ✅ CSS Fundamentals
-│   ├── overview.md              # Module concepts & learning objectives
-│   ├── workshop.md              # Incremental CSS implementation
 │   └── solution/                # Complete working code
-│       ├── *.html               # HTML files (from Module 1)
-│       ├── assets/images/       # MITS logo
-│       └── css/
-│           ├── base.css         # Reset, variables, typography, footer improvements
-│           ├── layout.css       # Header, footer, layout
-│           └── *.css            # Page-specific (empty)
+│       ├── index.html
+│       ├── about.html
+│       ├── guide.html
+│       ├── contribute.html
+│       └── css/                 # All CSS files (empty in Module 1)
 │
-├── module-3/                    # ✅ Home Page Styling
-│   ├── overview.md              # Module concepts & learning objectives
-│   ├── workshop.md              # Step-by-step styling tasks
-│   └── solution/                # Complete working code
-│       ├── *.html               # HTML files (updated button classes)
-│       ├── assets/images/       # Hero image added
-│       └── css/
-│           ├── base.css         # With button components
-│           ├── layout.css       # Unchanged from Module 2
-│           ├── index.css        # Home page styling ✨ NEW
-│           └── *.css            # Other pages (empty)
+├── module-2/                    ✅ CSS Fundamentals
+│   └── solution/css/
+│       ├── base.css             # Reset, variables, typography, buttons
+│       └── layout.css           # Header, footer, container, sections
 │
-└── README.md                    # ← You are here!
+├── module-3/                    ✅ Home Page
+│   └── solution/
+│       ├── assets/images/       # Hero image, logo
+│       └── css/index.css        # Hero, cards, badges, tags — NEW
+│
+├── module-4/                    ✅ About Page
+│   └── solution/css/about.css   # Feature grid, goals list — NEW
+│
+├── module-5/                    ✅ Guide & Contribute Pages
+│   └── solution/css/
+│       ├── guide.css            # Step counters, prerequisites — NEW
+│       └── contribute.css       # Opportunity grid, contact — NEW
+│
+├── module-6/                    ✅ Polish
+│   └── solution/css/
+│       └── enhancements.css     # Animations, skip link, print — NEW
+│
+├── module-7/                    ✅ Responsive Design
+│   └── solution/css/
+│       └── responsive.css       # clamp(), hamburger, breakpoints — NEW
+│
+├── module-8/                    ✅ Accessibility, SEO & Deployment
+│   └── solution/
+│       ├── *.html               # Full SEO meta, ARIA improvements
+│       ├── sitemap.xml          # NEW
+│       ├── robots.txt           # NEW
+│       └── css/layout.css       # logo link fix
+│
+├── assets/
+│   └── images/
+│       ├── course-cover-image.webp
+│       └── logo-dark.svg
+│
+└── README.md                    # You are here!
 ```
+
+> **Module continuity:** Each module's `solution/` folder is the starting point for the next module's workshop. This reflects real professional development — you always build on existing work.
+
+---
 
 ## ⏱️ Time Commitment
 
-**Total Course:** ~8-12 hours (when all modules complete)
+**Total course:** ~8–12 hours across all 8 modules
 
-**Current Modules:**
+| Phase | Modules | Time | Focus |
+|---|---|---|---|
+| Foundation | 1–3 | ~3–4 hours | HTML structure, CSS system, home page |
+| Content pages | 4–6 | ~3–4 hours | About, Guide, Contribute, polish |
+| Production-ready | 7–8 | ~3–4 hours | Responsive design, accessibility, deployment |
 
-- Module 1: 40-55 minutes (HTML structure + Git setup)
-- Module 2: 60-75 minutes (CSS fundamentals)
-- Module 3: 75-90 minutes (Home page styling)
+Each module is designed to be completed in **one focused session** with immediate visual results after every step — no session ends without something new to see in the browser.
 
-**Each module is designed to:**
-
-- Be completed in one focused session
-- Provide immediate visual results
-- Build on previous module's knowledge
-- Include breaks for testing and verification
-
-## 🎓 Learning Approach
-
-This course follows a **foundation-first, incremental approach**:
-
-### 1. HTML First, Styling Later
-
-Module 1 focuses purely on semantic HTML structure. You'll see your content work even without CSS, proving the importance of solid HTML.
-
-### 2. Incremental CSS Implementation
-
-Module 2 breaks CSS into 7 small steps with testing after each. You'll see your site transform progressively, never feeling overwhelmed.
-
-### 3. Visual Feedback Loop
-
-Every step includes a verification section - you immediately see what you've built. This keeps you motivated and helps catch errors early.
-
-### 4. Professional Practices
-
-Git workflow is integrated from Module 1. You'll use feature branches, meaningful commits, and GitHub from the start - just like professional developers.
-
-### 5. Modern Techniques
-
-Learn CSS Grid, Flexbox, and custom properties - the tools professionals use today, not outdated float-based layouts.
-
-## 🎨 What You're Building
-
-**The MITS Platform Website** - A professional promotional site featuring:
-
-### Home Page
-
-- Hero section with call-to-action
-- Platform introduction
-- Featured project cards with badges and tags
-- Collaboration call-to-action
-
-### About MITS Page
-
-- Mission statement
-- Platform goals
-- Feature highlights
-
-### Getting Started Page
-
-- Step-by-step registration guide
-- Prerequisites information
-- Getting started steps
-
-### Collaboration Page
-
-- Contribution opportunities
-- Contact information
-- Ways to get involved
+---
 
 ## 🌟 Course Highlights
 
-### Completed Modules (1-3)
+What makes this course different from typical HTML/CSS tutorials:
 
-✅ **Semantic HTML mastery** - Build accessible, standards-compliant markup  
-✅ **CSS custom properties** - Modern theming and design systems  
-✅ **Dark theme implementation** - Professional color schemes  
-✅ **Flexbox & Grid** - Modern layout techniques  
-✅ **Component-based CSS** - Reusable button patterns, card components  
-✅ **Visual effects** - Background images, gradients, transforms, transitions  
-✅ **Git & GitHub workflow** - Professional version control
+**Pure fundamentals** — No utility-class frameworks (no Tailwind), no component libraries (no Bootstrap). You understand every pixel.
 
-### Coming Soon (Modules 4-8)
+**Dark theme** — Most tutorials use a generic white background. This course matches a real professional dark-themed platform, which is harder and more instructive.
 
-🚧 **Additional page styling** - About, Guide, Contribute pages  
-🚧 **Responsive design** - Mobile-first with media queries  
-🚧 **Accessibility** - WCAG AA compliance  
-🚧 **SEO optimization** - Meta tags, sitemaps, structured data
+**Real design spec** — You're not designing from scratch. You're implementing a specific design (the MITS platform interface) — exactly what professional developers do.
 
-## 💡 Why Learn Pure HTML/CSS?
+**One concept per module** — Module 4 introduces `auto-fit` grids. Module 5 introduces CSS counters. Module 7 introduces `clamp()`. You're never overwhelmed with five new things at once.
 
-### Before Frameworks, Understand the Platform
+**Incremental steps with testing** — Every workshop breaks implementation into small pieces, each followed by a verification step. You can't accidentally do an hour of work only to discover a typo broke everything.
 
-Modern frameworks (React, Vue, Angular) abstract away HTML/CSS fundamentals. By mastering pure HTML/CSS first, you'll:
+**Accessibility built in** — Skip links appear in Module 6. ARIA attributes in Module 8. Focus rings throughout. Accessibility isn't an afterthought — it's part of the architecture from the start.
 
-- **Understand what frameworks do** - Know what's happening under the hood
-- **Debug better** - Recognize CSS issues regardless of framework
-- **Write better code** - Make informed decisions about when to use frameworks
-- **Build faster** - Sometimes pure HTML/CSS is the best tool
-- **Interview better** - Strong fundamentals impress employers
+**Live portfolio result** — The course ends with a deployed, live URL you can share on your CV, LinkedIn, or portfolio.
 
-### Real-World Applications
-
-Pure HTML/CSS skills are valuable for:
-
-- Landing pages and marketing sites
-- Email templates
-- Documentation sites
-- Portfolio websites
-- Prototypes and mockups
-- Contributing to open-source projects
+---
 
 ## 🤝 Contributing
 
@@ -407,32 +478,24 @@ Found an issue or have a suggestion? We'd love your input!
 
 - 🐛 [Open an issue](https://github.com/marketable-it-skills/mits-course-creator/issues)
 - 🔀 Submit a pull request
-- 💬 Join the discussion
-
-## 💬 Support
-
-Need help? We're here for you:
-
-- 📧 **Email:** info@mits-platform.org
-- 🐛 **Issues:** [GitHub Issues](https://github.com/marketable-it-skills/mits-course-creator/issues)
-- 📖 **Documentation:** Check module overview.md files for detailed explanations
-
-## 📄 License
-
-This course is part of the **[MITS Initiative](https://github.com/marketable-it-skills)** - educational resources for vocational IT training.
-
-## 🎉 Course Status
-
-**Current Progress:**
-
-- ✅ Module 1: Complete (HTML Structure)
-- ✅ Module 2: Complete (CSS Fundamentals - Base & Layout)
-- ✅ Module 3: Complete (Home Page Styling)
-- 📝 Modules 4-8: Planned
-
-**Ready to start?** Head to [Module 1](module-1/overview.md) and begin your journey to HTML/CSS mastery! 🚀
+- 💬 Join the discussion in GitHub Discussions
 
 ---
 
-**Last Updated:** December 2025  
-**Part of the [Marketable IT Skills (MITS)](https://github.com/marketable-it-skills) initiative**
+## 💬 Support
+
+Need help?
+
+- 📧 **Email:** info@mits-platform.org
+- 🐛 **Issues:** [GitHub Issues](https://github.com/marketable-it-skills/mits-course-creator/issues)
+- 📖 **Docs:** Each module's `overview.md` explains the concepts in detail before the workshop begins
+
+---
+
+## 📄 License
+
+This course is part of the **[Marketable IT Skills (MITS) Initiative](https://github.com/marketable-it-skills)** — educational resources for vocational IT training, used in competition preparation programmes across Europe.
+
+---
+
+**Ready to start?** → [Module 1: HTML Structure Only](module-1/overview.md) 🚀

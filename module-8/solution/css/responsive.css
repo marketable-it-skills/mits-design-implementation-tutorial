@@ -1,0 +1,265 @@
+/* ============================================================
+   RESPONSIVE DESIGN  (responsive.css)
+   Module 7 — Loaded last, overrides other stylesheets
+   ============================================================ */
+
+/* ============================================================
+   RESPONSIVE TYPOGRAPHY WITH clamp()
+   No media query needed — scales automatically with viewport.
+   clamp(min, preferred, max)
+   ============================================================ */
+
+h1 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+}
+
+h2 {
+  font-size: clamp(1.25rem, 3.5vw, 2rem);
+}
+
+h3 {
+  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+}
+
+/* Hero heading has a larger scale range */
+.hero h1 {
+  font-size: clamp(1.875rem, 6vw, 3rem);
+}
+
+/* ============================================================
+   CSS-ONLY HAMBURGER NAVIGATION
+   Technique: visually hidden checkbox + adjacent label
+   The :checked state is toggled by clicking the label.
+   CSS sibling selector (~) reveals the nav panel.
+   ============================================================ */
+
+/* Hide the checkbox — interaction happens via the <label> */
+.nav-toggle {
+  display: none;
+}
+
+/* Hamburger button — hidden on desktop, shown on mobile */
+.nav-toggle-label {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  padding: var(--spacing-xs);
+  border-radius: var(--radius-sm);
+  /* Ensure minimum touch target size (44×44px recommended) */
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+}
+
+/* The three hamburger lines */
+.nav-toggle-label span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: var(--color-text-primary);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  border-radius: 2px;
+}
+
+/* ============================================================
+   TABLET (max-width: 1023px)
+   Two-column layouts, slightly tighter spacing
+   ============================================================ */
+
+@media (max-width: 1023px) {
+  /* Project cards: 3-col → 2-col */
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Hero: trim padding a little */
+  .hero {
+    padding: 5rem 0;
+  }
+}
+
+/* ============================================================
+   MOBILE (max-width: 767px)
+   Single-column layouts, hamburger navigation
+   ============================================================ */
+
+@media (max-width: 767px) {
+
+  /* ----------------------------------------------------------
+     CONTAINER
+  ---------------------------------------------------------- */
+  .container {
+    padding: 0 var(--spacing-sm); /* 16px sides instead of 24px */
+  }
+
+  /* ----------------------------------------------------------
+     SECTIONS
+     Reduce the generous desktop padding on mobile
+  ---------------------------------------------------------- */
+  section {
+    padding: var(--spacing-xl) 0; /* 48px → keeps breathing room */
+  }
+
+  /* ----------------------------------------------------------
+     HAMBURGER — show button on mobile
+  ---------------------------------------------------------- */
+  .nav-toggle-label {
+    display: flex;
+  }
+
+  /* Hamburger → X animation when menu is open */
+  .nav-toggle:checked + .nav-toggle-label span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .nav-toggle:checked + .nav-toggle-label span:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+
+  .nav-toggle:checked + .nav-toggle-label span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  /* ----------------------------------------------------------
+     NAVIGATION PANEL
+     Hidden by default, revealed when checkbox is :checked.
+     Positioned absolutely under the header (header is sticky,
+     which creates a containing block for absolute children).
+  ---------------------------------------------------------- */
+  nav ul {
+    display: none; /* hidden until checkbox is checked */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background-color: var(--color-bg-secondary);
+    border-top: 1px solid var(--color-bg-tertiary);
+    border-bottom: 1px solid var(--color-bg-tertiary);
+    padding: var(--spacing-xs) 0;
+    z-index: 99;
+    /* Slide-in shadow for visual separation */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  }
+
+  /* ~ (general sibling) selector: nav is a sibling of .nav-toggle */
+  .nav-toggle:checked ~ nav ul {
+    display: flex;
+  }
+
+  /* Full-width nav links with large touch targets */
+  nav ul li a {
+    display: block;
+    padding: 0.875rem var(--spacing-md);
+    border-radius: 0;
+    font-size: 1rem;
+  }
+
+  nav ul li a:hover,
+  nav ul li a.active {
+    background-color: var(--color-bg-tertiary);
+    color: var(--color-primary);
+  }
+
+  /* ----------------------------------------------------------
+     HERO SECTION
+  ---------------------------------------------------------- */
+  .hero {
+    padding: 4rem 0;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  /* Hero buttons: wrap to full-width on very small screens */
+  .hero-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+  }
+
+  /* ----------------------------------------------------------
+     PROJECT CARDS: 2-col (tablet) → 1-col (mobile)
+  ---------------------------------------------------------- */
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* ----------------------------------------------------------
+     CTA BUTTONS — stack vertically on mobile
+  ---------------------------------------------------------- */
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+  }
+
+  /* ----------------------------------------------------------
+     STEP COUNTER — slightly smaller circle on mobile
+  ---------------------------------------------------------- */
+  .step::before {
+    min-width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    line-height: 2.5rem;
+  }
+
+  /* ----------------------------------------------------------
+     FOOTER — already uses auto-fit, but reduce column min-width
+  ---------------------------------------------------------- */
+  footer .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* ----------------------------------------------------------
+     FEATURE & OPPORTUNITY GRIDS
+     Already use auto-fit / minmax — reduce min size so cards
+     stack on very narrow viewports without orphaned columns.
+  ---------------------------------------------------------- */
+  .features-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .opportunities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* ----------------------------------------------------------
+     CONTACT INFO BOX (contribute page)
+     Labels and values stack nicely without min-width constraint
+  ---------------------------------------------------------- */
+  .contact-item {
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+  }
+
+  .contact-label {
+    min-width: unset;
+  }
+}
+
+/* ============================================================
+   REDUCED MOTION — ensure hamburger animation is also disabled
+   (enhancements.css already handles most animations)
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-toggle-label span {
+    transition: none;
+  }
+}
