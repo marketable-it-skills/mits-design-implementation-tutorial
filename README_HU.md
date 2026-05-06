@@ -22,12 +22,12 @@ Nincs rövidítés. Nincs keretrendszer. Minden egyes sort megértesz, amit írs
 
 Egy teljes **MITS Platform promóciós weboldal** 4 teljesen stílusozott, akadálymentes, reszponzív oldallal:
 
-| Oldal | Tartalom |
-|---|---|
-| **Főoldal** | Hero szekció, projekt kártya rács, cselekvésre ösztönző szekciók |
-| **Rólunk** | Küldetésnyilatkozat, funkció rács, projekt célok |
-| **Útmutató** | Lépésről lépésre regisztrációs útmutató, előfeltételek |
-| **Együttműködés** | Közreműködési lehetőségek, kapcsolatfelvétel |
+| Oldal             | Tartalom                                                         |
+| ----------------- | ---------------------------------------------------------------- |
+| **Főoldal**       | Hero szekció, projekt kártya rács, cselekvésre ösztönző szekciók |
+| **Rólunk**        | Küldetésnyilatkozat, funkció rács, projekt célok                 |
+| **Útmutató**      | Lépésről lépésre regisztrációs útmutató, előfeltételek           |
+| **Együttműködés** | Közreműködési lehetőségek, kapcsolatfelvétel                     |
 
 A végeredmény egy **éles, GitHub Pages-en tárolt portfólió projekt** 90+ Lighthouse pontszámmal minden kategóriában.
 
@@ -94,6 +94,7 @@ Mind a 8 modul teljesítésével képes leszel:
 Hozz létre mind a 4 oldalt teljes szemantikus HTML5 struktúrával. A CSS fájlok be vannak linkelve, de üresen maradnak — ez tanítja a felelősségek szétválasztását, és megelőzi a kognitív túlterhelést a stílusozás előtt.
 
 **Mit fogsz tanulni:**
+
 - HTML5 szemantikus elemek (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`)
 - Megfelelő fejléc hierarchia (oldalanként egy H1, majd H2–H6 sorrendben)
 - Többoldalas weboldal struktúra és belső linkek
@@ -113,6 +114,7 @@ Hozz létre mind a 4 oldalt teljes szemantikus HTML5 struktúrával. A CSS fájl
 Alakítsd át a stílus nélküli HTML-t professzionálisan stílusozott, sötét témájú weboldallá. Ez a modul építi fel azt a design rendszer alapot, amelyre az összes többi modul támaszkodik.
 
 **Mit fogsz tanulni:**
+
 - CSS reset és a dobozmodell (`box-sizing: border-box`)
 - CSS egyéni tulajdonságok (változók) színekhez, térközökhöz és tipográfiához
 - Sötét téma színpaletta (`#0f172a` háttér, `#06b6d4` kiemelés)
@@ -134,6 +136,7 @@ Alakítsd át a stílus nélküli HTML-t professzionálisan stílusozott, söté
 A legösszetettebb oldalt stílusozd először. A főoldal bevezeti a kulcsfontosságú komponens mintákat — gombok, hero háttérképpel, projekt kártyák —, amelyek az egész kurzuson át visszaköszönnek.
 
 **Mit fogsz tanulni:**
+
 - CSS komponens design minták (`.btn`, `.btn-primary`, `.btn-secondary`)
 - Háttérképek `background-size: cover` és `background-position` segítségével
 - Lineáris gradiens átfedések a szöveg olvashatóságához képek felett
@@ -154,6 +157,7 @@ A legösszetettebb oldalt stílusozd először. A főoldal bevezeti a kulcsfonto
 Alkalmazd a design rendszert a Rólunk oldalon fejlettebb CSS technikákkal — bemutatva az `auto-fit` rácsokat, amelyek médialekérdezések nélkül reagálnak a tartalomra, és pszeudo-elem egyéni felsorolásjeleket.
 
 **Mit fogsz tanulni:**
+
 - Oldalspecifikus CSS architektúra (egy CSS fájl oldalanként)
 - Szekció háttér váltakozás vizuális ritmushoz
 - CSS pszeudo-elemek (`::before`) egyéni nyíl felsorolásjelekhez
@@ -174,6 +178,7 @@ Alkalmazd a design rendszert a Rólunk oldalon fejlettebb CSS technikákkal — 
 Stílusozd a weboldal utolsó két oldalát. Az Útmutató oldalon CSS számlálók biztosítják az automatikus lépésszámozást; az Együttműködés oldalon lehetőség kártya rácsok és flex igazítás valósul meg a kapcsolati információkhoz.
 
 **Mit fogsz tanulni:**
+
 - CSS számlálók (`counter-reset`, `counter-increment`, `counter()`) automatikusan számozott lépésekhez
 - `::before` pszeudo-elem mint stílusozott számozott kör
 - Flexbox a lépés elrendezéshez (számkör + tartalom egymás mellett)
@@ -194,6 +199,7 @@ Stílusozd a weboldal utolsó két oldalát. Az Útmutató oldalon CSS számlál
 Adj professzionális csiszolást az egész weboldalhoz egyetlen `enhancements.css` fájlon keresztül. Nincs új oldal — csak egy új fájl, amely felemeli az egész élményt.
 
 **Mit fogsz tanulni:**
+
 - `scroll-behavior: smooth` natív sima görgetéshez
 - Skip-to-content link (vizuálisan rejtett, fókuszálásig)
 - `:focus` vs `:focus-visible` — billentyűzetes gyűrű egér kontúr nélkül
@@ -214,6 +220,7 @@ Adj professzionális csiszolást az egész weboldalhoz egyetlen `enhancements.cs
 Tedd a desktop-first weboldalt minden képernyőméreten gyönyörűen működővé — 320 px-es telefonoktól a széles monitorokig — egyetlen `responsive.css` fájl és egy csak CSS-es hamburger menü segítségével.
 
 **Mit fogsz tanulni:**
+
 - `clamp(min, preferred, max)` folyékony tipográfiához médialekérdezések nélkül
 - Csak CSS-es hamburger navigáció: rejtett `<input type="checkbox">` + `:checked` + `~` testvér szelektor
 - Hamburger → ✕ animáció `transform: translateY() rotate()` segítségével
@@ -236,6 +243,7 @@ Tedd a desktop-first weboldalt minden képernyőméreten gyönyörűen működő
 Az utolsó modul éles üzemre késszé teszi a weboldalt: WCAG AA megfelelő, a keresőmotorok által felfedezhető, és élőben elérhető a GitHub Pages-en 90+ Lighthouse pontszámmal.
 
 **Mit fogsz tanulni:**
+
 - `aria-label="Main navigation"` a `<nav>` elemen képernyőolvasó tájékozódáshoz
 - `aria-current="page"` az aktív navigációs linken
 - Logo mint navigációs link helyes akadálymentes névvel (redundáns bejelentések nélkül)
@@ -257,16 +265,16 @@ Az utolsó modul éles üzemre késszé teszi a weboldalt: WCAG AA megfelelő, a
 
 ## 📚 Modulok áttekintése
 
-| Modul | Cím | Állapot | Idő | Kulcsfogalom |
-|-------|-----|---------|-----|--------------|
-| [1](module-1/) | Csak HTML struktúra | ✅ Kész | 40–55 perc | Szemantikus HTML5, W3C validáció |
-| [2](module-2/) | CSS alapok — Alap és elrendezés | ✅ Kész | 60–75 perc | CSS változók, Flexbox, Grid |
-| [3](module-3/) | Főoldal stílusozása | ✅ Kész | 75–90 perc | Komponensek, hero kép, kártyák |
-| [4](module-4/) | Rólunk oldal stílusozása | ✅ Kész | 60–75 perc | `::before`, `auto-fit`, grayscale szűrő |
-| [5](module-5/) | Útmutató és Együttműködés stílusozása | ✅ Kész | 75–90 perc | CSS számlálók, flex igazítás |
-| [6](module-6/) | Csiszolás és haladó CSS | ✅ Kész | 60–75 perc | Animációk, fókuszgyűrűk, nyomtatási stílusok |
-| [7](module-7/) | Reszponzív design | ✅ Kész | 90–120 perc | `clamp()`, hamburger menü, töréspontok |
-| [8](module-8/) | Akadálymentesség, SEO és telepítés | ✅ Kész | 90–120 perc | ARIA, Open Graph, JSON-LD, GitHub Pages |
+| Modul          | Cím                                   | Állapot | Idő         | Kulcsfogalom                                 |
+| -------------- | ------------------------------------- | ------- | ----------- | -------------------------------------------- |
+| [1](module-1/) | Csak HTML struktúra                   | ✅ Kész | 40–55 perc  | Szemantikus HTML5, W3C validáció             |
+| [2](module-2/) | CSS alapok — Alap és elrendezés       | ✅ Kész | 60–75 perc  | CSS változók, Flexbox, Grid                  |
+| [3](module-3/) | Főoldal stílusozása                   | ✅ Kész | 75–90 perc  | Komponensek, hero kép, kártyák               |
+| [4](module-4/) | Rólunk oldal stílusozása              | ✅ Kész | 60–75 perc  | `::before`, `auto-fit`, grayscale szűrő      |
+| [5](module-5/) | Útmutató és Együttműködés stílusozása | ✅ Kész | 75–90 perc  | CSS számlálók, flex igazítás                 |
+| [6](module-6/) | Csiszolás és haladó CSS               | ✅ Kész | 60–75 perc  | Animációk, fókuszgyűrűk, nyomtatási stílusok |
+| [7](module-7/) | Reszponzív design                     | ✅ Kész | 90–120 perc | `clamp()`, hamburger menü, töréspontok       |
+| [8](module-8/) | Akadálymentesség, SEO és telepítés    | ✅ Kész | 90–120 perc | ARIA, Open Graph, JSON-LD, GitHub Pages      |
 
 **Becsült teljes idő:** 8–12 óra
 
@@ -301,6 +309,7 @@ code module-1/overview.md
 ### 3. lehetőség: Használd a megoldásokat hivatkozásként
 
 Minden modul tartalmaz egy teljes `solution/` mappát. Használd őket arra, hogy:
+
 - Ellenőrizd, hogy az implementációd helyes-e
 - Hibakereséshez hasonlítsd össze a kódodat a működő verzióval
 - Lásd az egyes szakaszokban elvárt vizuális eredményt
@@ -311,14 +320,14 @@ Minden modul tartalmaz egy teljes `solution/` mappát. Használd őket arra, hog
 
 Ha már ismered az alap HTML/CSS-t, fókuszálj a modern technikákra:
 
-| Modul | Miért érdemes |
-|---|---|
-| [2. modul](module-2/) | CSS egyéni tulajdonságok — a modern temazási megközelítés |
-| [4. modul](module-4/) | `auto-fit` rácsok + pszeudo-elem felsorolásjelek |
-| [5. modul](module-5/) | CSS számlálók — hatékony és alulhasznált |
+| Modul                 | Miért érdemes                                               |
+| --------------------- | ----------------------------------------------------------- |
+| [2. modul](module-2/) | CSS egyéni tulajdonságok — a modern temazási megközelítés   |
+| [4. modul](module-4/) | `auto-fit` rácsok + pszeudo-elem felsorolásjelek            |
+| [5. modul](module-5/) | CSS számlálók — hatékony és alulhasznált                    |
 | [6. modul](module-6/) | `@keyframes`, `prefers-reduced-motion`, nyomtatási stílusok |
-| [7. modul](module-7/) | `clamp()` + csak CSS hamburger menü |
-| [8. modul](module-8/) | ARIA, Open Graph, JSON-LD, telepítés |
+| [7. modul](module-7/) | `clamp()` + csak CSS hamburger menü                         |
+| [8. modul](module-8/) | ARIA, Open Graph, JSON-LD, telepítés                        |
 
 ---
 
@@ -333,6 +342,7 @@ Ha már ismered az alap HTML/CSS-t, fókuszálj a modern technikákra:
 ### CSS fogalmak modulonként
 
 **Alap (1–3. modul)**
+
 - Szemantikus HTML5 struktúra (`header`, `nav`, `main`, `section`, `article`, `footer`)
 - CSS reset és dobozmodell (`box-sizing: border-box`)
 - CSS egyéni tulajdonságok (design tokenek színekhez, térközökhöz, tipográfiához)
@@ -345,6 +355,7 @@ Ha már ismered az alap HTML/CSS-t, fókuszálj a modern technikákra:
 - Kártya komponensek — hover effektusok `transform` és `box-shadow` segítségével
 
 **Középhaladó (4–5. modul)**
+
 - CSS pszeudo-elemek `::before` egyéni felsorolásjelekhez
 - CSS Grid `auto-fit` + `minmax()` — reszponzív médialekérdezések nélkül
 - CSS számlálók — automatikus sorrendi számozás
@@ -354,6 +365,7 @@ Ha már ismered az alap HTML/CSS-t, fókuszálj a modern technikákra:
 - `margin-top: auto` alulra igazított flex elemekhez
 
 **Haladó (6–8. modul)**
+
 - `@keyframes` és az `animation` rövidítés
 - `scroll-behavior: smooth` — natív sima görgetés
 - `:focus-visible` — billentyűzetes gyűrű egér kontúr nélkül
@@ -442,11 +454,11 @@ mits-design-implementation-tutorial/
 
 **Teljes kurzus:** ~8–12 óra mind a 8 modulon át
 
-| Fázis | Modulok | Idő | Fókusz |
-|---|---|---|---|
-| Alap | 1–3 | ~3–4 óra | HTML struktúra, CSS rendszer, főoldal |
-| Tartalmi oldalak | 4–6 | ~3–4 óra | Rólunk, Útmutató, Együttműködés, csiszolás |
-| Éles üzemre kész | 7–8 | ~3–4 óra | Reszponzív design, akadálymentesség, telepítés |
+| Fázis            | Modulok | Idő      | Fókusz                                         |
+| ---------------- | ------- | -------- | ---------------------------------------------- |
+| Alap             | 1–3     | ~3–4 óra | HTML struktúra, CSS rendszer, főoldal          |
+| Tartalmi oldalak | 4–6     | ~3–4 óra | Rólunk, Útmutató, Együttműködés, csiszolás     |
+| Éles üzemre kész | 7–8     | ~3–4 óra | Reszponzív design, akadálymentesség, telepítés |
 
 Minden modult **egy fókuszált ülésben** lehet elvégezni, és minden egyes lépés után azonnal látható vizuális eredmény keletkezik — egyetlen ülés sem ér véget anélkül, hogy valami újat ne láthatnál a böngészőben.
 
